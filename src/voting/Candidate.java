@@ -1,5 +1,7 @@
 package voting;
 
+import voting.Candidate;
+
 /**
  * Representation of a candidate running for office.
  *
@@ -100,5 +102,17 @@ public class Candidate {
 			return false;
 		}
 	}
+	
+	public static void main(String[] args) {
+		Candidate candidate1 = new Candidate("Indira Patel", "Demopublican", 35400);
+		Candidate candidate2 = new Candidate("James Bond", "Demopublican", 69420);
+		Candidate candidate3 = new Candidate("Scott Steward", "Demopublican", 47890);
+		
+		System.out.println(candidate1.getName() + ": " + candidate1.getVotes());
+		System.out.println(candidate2.getName() + ": " + candidate2.getVotes());
+		System.out.println(candidate3.getName() + ": " + candidate3.getVotes());
+		
 
+	}
 }
+
